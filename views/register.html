@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link href="./assets/ico/favicon.ico" rel="icon">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--fa icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--vendor css file-->
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--main css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Đăng Ký-Edu Web</title>
+</head>
+
+<body>
+    <!-- =====================Header============================ -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="index.html">EduWeb</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <div class="d-none d-md-flex searchbar">
+                <form action="">
+                    <input class="search-input" type="text" placeholder="Tìm kiếm khóa học">
+                </form>
+            </div>
+
+            <h2 class="title text-uppercase">Đăng Ký</h2>
+        </div>
+    </header>
+
+    <section id="register-wrapper" class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card border-0 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                            <h5 class="card-title text-center mb-5 fw-light fs-5">Tạo một tài khoản</h5>
+                            <form action="" method="post">
+                                <div class="mb-3 d-flex justify-content-between align-items-center row g-0">
+                                    <div class="form-floating col-6">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Họ" required>
+                                        <label for="lastName">Họ<span class="text-danger">(*)</span></label>
+                                    </div>
+                                    <div class="form-floating col-6">
+                                        <input type="text" class="form-control" id="firstName" placeholder="Tên" required>
+                                        <label for="firstName">Tên<span class="text-danger">(*)</span></label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="text" class="form-control" id="SSN" placeholder="Số CMNN/CCCD" required>
+                                    <label for="SSN">Số CMND/CCCD<span class="text-danger">(*)</span></label>
+                                </div>
+                                <div class="mb-3 mx-3 d-flex justify-content-start align-items-center">
+                                    <span class="me-4">Giới tính</span>
+                                    <div class="form-check me-4">
+                                        <input class="form-check-input" type="radio" name="sex-radio" id="male">
+                                        <label class="form-check-label" for="male">
+                                      Nam
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="sex-radio" id="female">
+                                        <label class="form-check-label" for="fenale">
+                                      Nữ
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    <label for="email">Email<span class="text-danger">(*)</span></label>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="text" class="form-control" id="phoneNumber" placeholder="Số điện thoại" required>
+                                    <label for="phoneNumber">Số điện thoại<span class="text-danger">(*)</span></label>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="text" class="form-control" id="otherPhoneNumber" placeholder="Số điện thoại khác (nếu có)">
+                                    <label for="otherPhoneNumber">Số điện thoại khác (nếu có)</label>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="text" class="form-control" id="userName" placeholder="Tên đăng nhập" required>
+                                    <label for="userName">Tên đăng nhập<span class="text-danger">(*)</span></label>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required>
+                                    <label for="password">Mật khẩu<span class="text-danger">(*)</span></label>
+                                </div>
+                                <div class="mb-3 form-floating">
+                                    <input type="password" class="form-control" id="floatPasswordRetype" placeholder="Nhập lại mật khẩu" required>
+                                    <label for="floatPasswordRetype">Nhập lại mật khẩu<span class="text-danger">(*)</span></label>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-start">
+                                    <input class="form-check-input ps-2 me-2" type="checkbox" value="" id="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">Bạn xác nhận đã đồng ý với <a href="#" class="terms">điều khoản và chính sách</a> của Edu Web.</label>
+                                </div>
+                                <div class="d-grid">
+                                    <button id="btn-register" class="btn btn-primary btn-login-register btn-login-register-main text-uppercase fw-bold" type="submit">Đăng ký</button>
+                                </div>
+                                <hr class="my-4">
+                                <div class="d-grid mb-2">
+                                    <button class="btn btn-google btn-login-register text-uppercase fw-bold" type="submit">
+                          <i class="fab fa-google me-2"></i> Tiếp tục với Google
+                        </button>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-facebook btn-login-register text-uppercase fw-bold" type="submit">
+                          <i class="fab fa-facebook-f me-2"></i> Tiếp tục với với Facebook
+                        </button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top section-bg mt-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Edu Web</h3>
+                        <p>
+                            151 đường Nguyễn Thị Minh Khai <br> Phường 5, Quận 1<br> Thành Phố Hồ Chí Minh <br><br>
+                            <strong>Số điện thoại:</strong> 012345789<br>
+                            <strong>Email:</strong> infoEduWeb@EduWeb.edu.vn<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Liên Kết</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Trang chủ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./course.html">Khóa Học</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Giảng Viên</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Về Edu Web</a></li>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Khóa học tiêu biểu</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Luyện thi Đại Học Toán</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Vật Lý vip pro, 9+ trong tầm tay</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tổng Ôn Sinh Học 12</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Bí kíp giải nhanh Hóa Hữu Cơ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Khóa live ôn tập Vật Lý 8+</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Newsleter</h4>
+                        <p>Nhập vào email để nhận những thông báo và tin tức mới nhất từ chúng tôi</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Edu Web</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Preload and back to top button-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!--Vendor js file-->
+    <script src="./assets/vendor/aos/aos.js "></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="./assets/vendor/php-email-form/validate.js "></script>
+    <script src="./assets/vendor/purecounter/purecounter.js "></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="./assets/vendor/waypoints/noframework.waypoints.js "></script>
+    <!--main script-->
+    <script src="./assets/js/main.js "></script>
+</body>
+
+</html>

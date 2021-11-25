@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link href="./assets/ico/favicon.ico" rel="icon">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--fa icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--vendor css file-->
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--main css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pen C Vật Lý</title>
+</head>
+
+<body>
+
+    <!-- =====================Header============================ -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container-md d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="index.html">EduWeb</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <h2 class="d-none d-md-flex title text-uppercase">Khóa học</h2>
+
+            <div class="register-login d-flex align-items-center">
+                <a href="register.html" class="register p-2 border rounded me-1">Đăng Ký</a>
+                <a href="login.html" class="login p-2 border rounded">Đăng Nhập</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Chi tiết khóa học</h2>
+                <ol>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./course.html">Khóa học</a></li>
+                    <li>Học tốt toán 11</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!--============About Course Section==============-->
+    <section class="about-course py-5">
+        <div class="container-md">
+            <h1 class="course-name">Học tốt toán 11</h1>
+            <h6 class="course-lecturer mb-3">Giảng viên: <a href="#">Thầy Trần Đức Chung</a></h6>
+            <div class="row g-5 justify-content-center align-items-start">
+                <div class="col-md-6">
+                    <img class="w-100" src="./assets/img/course/hoc-tot-toan-11-thay-nguyen-phu-hoang-lan-1618885370.png" alt="...">
+                </div>
+                <div class="col-md-6 course-info">
+                    <p class="mb-2"><i class="fas fa-angle-double-right"></i> Giá: <span>2.000.000 VND</span></p>
+                    <p class="mb-2"><i class="fas fa-angle-double-right"></i> Số tuần học: <span>10</span></p>
+                    <p class="mb-2"><i class="fas fa-angle-double-right"></i> Số lớp học hiện tại: <span>3</span></p>
+                    <div>
+                        <span>Mô tả khóa học: </span>
+                        <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minus vel illo veritatis eum nisi laboriosam iste autem dolorum repellat ullam, ducimus omnis, corrupti tenetur error, minima iure expedita incidunt.</p>
+                    </div>
+                    <a href="#onlineClass" class="btn btn-success course-register-btn">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===============Login modal=========================-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Login Form -->
+                <form action="">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Đăng nhập để tiếp tục</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="username">Tài khoản/Email<span class="text-danger">(*)</span></label>
+                            <input type="text" name="username" class="form-control" id="username" placeholder="Enter username or email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password">Mật khẩu<span class="text-danger">(*)</span></label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                            <label class="form-check-label" for="remember">Remember Me</label>
+                            <a href="#" class="float-end">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer pt-4">
+                        <button type="button" class="btn btn-primary btn-login mx-auto w-100">Đăng nhập</button>
+                    </div>
+                    <p class="text-center">Chưa có tài khoản? <a href="./register.html">Đăng ký ngay</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--===============Online class section================-->
+    <section id="onlineClass" class="online-class py-5 section-bg">
+        <div class="container-md">
+            <h2>Danh sách các lớp học</h2>
+            <!-- <div class="row">
+                <div class="col-sm-12 col-md-10"> -->
+            <table class="class-list-table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Tên lớp</th>
+                        <th scope="col">Giảng viên</th>
+                        <th scope="col">Ngày bắt đầu</th>
+                        <th scope="col">Ngày kết thúc</th>
+                        <th scope="col">Tuần học</th>
+                        <th scope="col">Tiết học</th>
+                        <th scope="col">Đã tham gia</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>L01</td>
+                        <td>T. Trần Đức Chung</td>
+                        <td>19/10/2021</td>
+                        <td>20/05/2022</td>
+                        <td>48|49|50|51|2|3|4|9|10</td>
+                        <td>14-15-16</td>
+                        <td>24</td>
+                        <td><a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Tham gia</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>L02</td>
+                        <td>T. Trần Đức Chung</td>
+                        <td>19/10/2021</td>
+                        <td>20/05/2022</td>
+                        <td>48|49|50|51|2|3|4|9|10</td>
+                        <td>14-15-16</td>
+                        <td>24</td>
+                        <td><a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Tham gia</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>L03</td>
+                        <td>T. Trần Đức Chung</td>
+                        <td>19/10/2021</td>
+                        <td>20/05/2022</td>
+                        <td>48|49|50|51|2|3|4|9|10</td>
+                        <td>14-15-16</td>
+                        <td>24</td>
+                        <td><a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Tham gia</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!--================Feedback section========================-->
+    <section class="feedback py-5">
+        <div class="container-md">
+            <h2>Đánh giá</h2>
+            <div>
+                <h3>Điểm đánh giá trung bình</h3>
+                <!-- <div class="d-flex align-items-center">
+                    <div class="avg-score" style="--avg-score: 9.5;"></div>
+                    <span>9.5</span>
+                </div> -->
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path class="circle"
+                        stroke-dasharray="95, 100"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <text x="18" y="22" class="score">9.5</text>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <h3>Các nhận xét và đánh giá về khóa học</h3>
+                <div class="row d-flex justify-content-start align-items-center">
+                    <div class="col-md-8">
+                        <div class="feedback-item">
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="user d-flex flex-row align-items-center">
+                                    <img width="30" height="30" src="./assets/img/user/download.jfif" alt=".." class="user-img rounded-circle me-2">
+                                    <div class="user-name fw-bold">sonaka</div>
+                                </div>
+                                <div class="score d-flex flex-row">
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary">
+                                    </div>
+                                </div>
+                                <small>22/10/2021</small>
+                            </div>
+                            <div class="comment">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="user d-flex flex-row align-items-center">
+                                    <img width="30" height="30" src="./assets/img/user/download (1).jfif" alt=".." class="user-img rounded-circle me-2">
+                                    <div class="user-name fw-bold">sabonaka</div>
+                                </div>
+                                <div class="score d-flex flex-row">
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                    <div class="dot mx-1 rounded-circle bg-secondary active">
+                                    </div>
+                                </div>
+                                <small>25/10/2021</small>
+                            </div>
+                            <div class="comment">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top section-bg mt-5">
+            <div class="container ">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Edu Web</h3>
+                        <p>
+                            151 đường Nguyễn Thị Minh Khai <br> Phường 5, Quận 1<br> Thành Phố Hồ Chí Minh <br><br>
+                            <strong>Số điện thoại:</strong> 012345789<br>
+                            <strong>Email:</strong> infoEduWeb@EduWeb.edu.vn<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Liên Kết</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Trang chủ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./course.html">Khóa Học</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Giảng Viên</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Về Edu Web</a></li>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Khóa học tiêu biểu</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Luyện thi Đại Học Toán</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Vật Lý vip pro, 9+ trong tầm tay</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tổng Ôn Sinh Học 12</a></li>
+                            <li><i class="bx bx-chevron-righ"></i> <a href="#">Bí kíp giải nhanh Hóa Hữu Cơ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Khóa live ôn tập Vật Lý 8+</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Newsleter</h4>
+                        <p>Nhập vào email để nhận những thông báo và tin tức mới nhất từ chúng tôi</p>
+                        <form action=" " method="post ">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Edu Web</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="# " class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="# " class="facebook"><i class="bx bxl-facebook "></i></a>
+                <a href="# " class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="# " class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="# " class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Preload and back to top button-->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!--Vendor js file-->
+    <script src="./assets/vendor/aos/aos.js "></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="./assets/vendor/php-email-form/validate.js "></script>
+    <script src="./assets/vendor/purecounter/purecounter.js "></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="./assets/vendor/waypoints/noframework.waypoints.js "></script>
+    <!--main script-->
+    <script src="./assets/js/main.js "></script>
+</body>
+
+</html>
